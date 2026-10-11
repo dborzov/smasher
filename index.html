@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smasher The Battlebot by Hamish and Misha</title>
+<meta name="description" content="Two sixth graders build a one-pound battlebot. A D&D-flavoured, step-by-step guide to electricity, breadboards, Raspberry Pi pins and making motors drive.">
+<meta property="og:title" content="Smasher The Battlebot by Hamish and Misha">
+<meta property="og:description" content="A quest-by-quest guide to building a one-pound ramming battlebot with a Raspberry Pi.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <small>&gt; ./smasher --party=hamish,misha --class=artificer</small>
+      <h1>Smasher <span>The Battlebot</span></h1>
+      <div class="by">by Hamish and Misha</div>
+    </div>
+    <button class="xp" id="xpBtn" title="Open the Party Sheet">
+      <div class="lbl"><span id="xpLvl"></span><span id="xpTxt"></span></div>
+      <div class="xpbar"><i id="xpFill"></i></div>
+    </button>
+  </header>
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="map">Campaign Map</button>
+    <button role="tab" data-tab="quests">Quests</button>
+    <button role="tab" data-tab="sheet">Party Sheet</button>
+    <button role="tab" data-tab="loot">Loot Bestiary</button>
+    <button role="tab" data-tab="book">Spellbook</button>
+  </nav>
+  <main id="view"><noscript>This guide needs JavaScript switched on.</noscript></main>
+  <footer>
+    <p>Smasher The Battlebot is a learning project by Hamish and Misha. Wiring and pin choices follow the tutorial for the
+    <a href="https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi">Freenove Ultimate Starter Kit for Raspberry Pi</a>
+    (CC BY-NC-SA 3.0). The catalogue photo of the kit is Freenove's. Not affiliated with Freenove or Raspberry Pi.</p>
+  </footer>
+</div>
+<div id="scroll" hidden><button class="x" aria-label="Close" id="scrollX">×</button><small>SCROLL OF KNOWING</small><h4 id="scrollT"></h4><p id="scrollB"></p></div>
+<div id="toasts" aria-live="polite"></div>
+<script src="js/legacy.js"></script>
+<script src="js/widgets.js"></script>
+<script src="js/quests.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
